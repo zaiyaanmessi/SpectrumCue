@@ -34,7 +34,7 @@
      ```
    - On PowerShell:
      ```bash
-     source venv/bin/activate.ps1
+     venv/bin/activate.ps1
      ```
 
 4. **Install Required Packages:**
