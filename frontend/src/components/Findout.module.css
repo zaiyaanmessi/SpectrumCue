@@ -1,0 +1,139 @@
+/* Global Styles for Findout component */
+.container {
+  max-width: 900px;
+  margin: 0 auto; /* Center the container */
+  padding: 30px; /* Add padding to the container */
+  background-color: #ffffff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Step Styles */
+.step {
+  display: none; /* Hidden by default */
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #95a5a6; /* Softer border color */
+  background-color: #ecf0f1; /* Step background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for steps */
+}
+
+.step.active {
+  display: block; /* Show active step */
+}
+
+/* Header Styles */
+h4 {
+  text-align: center;
+  color: #2ba085; /* Vibrant color for headers */
+  font-size: 32px; /* Increased font size */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 30px; /* Increased bottom margin for form groups */
+}
+
+label {
+  font-weight: bold; /* Bolder text for labels */
+  color: #2d1c2c; /* Darker label color */
+  margin-bottom: 10px; /* Space between label and input */
+  display: block; /* Make label a block element */
+}
+
+/* Select and Input Styles */
+.custom-select,
+.form-control {
+  border: 2px solid #e8993d; /* Colorful border */
+  border-radius: 10px;
+  padding: 16px; /* Increased padding */
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+  background-color: #ffffff; /* White background for inputs */
+  font-size: 22px; /* Larger font size */
+  appearance: none;
+}
+
+.custom-select {
+  appearance: none; /* Removes default styling on select */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23343650"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom down arrow */
+  background-repeat: no-repeat;
+  background-position: right 12px center; /* Positioning the arrow */
+  background-size: 12px; /* Size of the arrow */
+}
+
+/* Input Focus Styles */
+.custom-select:focus,
+.form-control:focus {
+  border-color: #2ba085; /* Vibrant border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(43, 160, 133, 0.5); /* Soft shadow on focus */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #2ba085; /* Vibrant button color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px; /* Increased padding */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+  font-size: 22px; /* Larger button text */
+  width: 20%; /* Full width for buttons */
+  margin-top: 10px; /* Space between buttons */
+}
+.btnSecondary {
+  color: white;
+  background-color: red;
+}
+.btnSecondary:hover {
+  background-color: #e8993d; /* Change on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+.btnPrimary {
+  color: white;
+  background-color: black;
+}
+.btnPrimary:hover {
+  background-color: #191006; /* Change on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* Radio Button Styles */
+.radio-inline {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center; /* Center alignment for radio buttons */
+}
+
+.radio-inline input {
+  margin-right: 5px; /* Spacing between radio and label */
+}
+
+/* Paragraph Styles */
+p {
+  margin: 15px 0; /* Increased margin for paragraphs */
+  font-size: 20px; /* Increased font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .btn {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  h4 {
+    font-size: 26px; /* Smaller size for smaller screens */
+  }
+}
