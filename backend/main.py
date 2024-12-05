@@ -27,7 +27,7 @@ class PredictionData(BaseModel):
     relation: int
  
 def make_prediction(data):
-    loaded_model = load_model('austim_all_datasets_model_trained.keras')
+    loaded_model = load_model('austim_test_model.keras')
     scaler = joblib.load('scaler.pkl')
     arr=np.array(data)
     arr=arr.reshape(1,-1)

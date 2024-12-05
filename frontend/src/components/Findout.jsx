@@ -174,7 +174,7 @@ const Findout = () => {
               </label>
             </div>
             <div id="side2" style={{ float: "left", marginRight: "10%" }}>
-              <p>Family member with austim?</p>
+              <p>Family member with autism?</p>
               <label className="radio-inline">
                 <input
                   type="radio"
